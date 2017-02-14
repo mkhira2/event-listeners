@@ -49,15 +49,15 @@ textBox.addEventListener('keydown', function(eventObj) {
 // ********************
 
 var textBox2 = document.querySelector('.text-box2')
-var guestList = document.querySelector('#add-guest-bonus .guest-list')
+var guestList2 = document.querySelector('#add-guest-bonus .guest-list')
 var enter = 13
 
 textBox2.addEventListener('keydown', function(eventObj) {
 	if (eventObj.keyCode === enter) {
 		var liNode = document.createElement('li')
-		guestList.appendChild(liNode)
+		guestList2.appendChild(liNode)
 		liNode.innerHTML = eventObj.target.value
-		liNode.className = 'guest'
+		liNode.className = 'guest2'
 		eventObj.target.value = ''
 
 		var removeButton = document.createElement('button')
@@ -65,7 +65,7 @@ textBox2.addEventListener('keydown', function(eventObj) {
 		liNode.appendChild(removeButton)
 
 		removeButton.addEventListener('click', function(eventObj) {
-			guestList.removeChild(liNode)
+			guestList2.removeChild(liNode)
 		})
 	}
 
