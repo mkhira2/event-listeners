@@ -113,6 +113,10 @@ hr.q-divider{
   border-left: none;
 }
 
+.nav-button {
+  width: 20%;
+}
+
 /*TASK 2*/
 
 #add-guest .answer-box {
